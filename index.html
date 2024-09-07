@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelvin Yau</title>
+    <!--stylesheet-->
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/display.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!--icon-->
+    <script src="https://kit.fontawesome.com/598dc5fe5f.js" crossorigin="anonymous"></script>
+    <!--database-->
+    <script src="js/projects.js"></script>
+</head>
+
+<body>
+    <div class="responsive_off">
+        <div class="header_container">
+            <span class="logo_container">
+                <div class="logo">Kelvin Yau</div>
+            </span>
+    
+            <span class="nav">
+                <a href="#about" class="white">About</a>
+                <a href="#projects" class="white">Projects</a>
+                <a href="javascript: document.body.scrollIntoView(false)" class="white">Contact</a>
+                <a href="test.txt" class="white" download>Resume</a>
+            </span>
+        </div>
+        
+        <div id="intro_video">
+            <div class="banner_container">
+                <video class="banner" src="media/portfolio_intro.mp4" autoplay muted loop></video>
+            </div>
+        </div>
+    
+        <div id="about">
+            <div class="about_container">
+            <div class="title"><span class="title_main">About Me</span><span class="title_sub">Driven to Make an Impact</span></div>
+            <div class="content">
+                Greetings, I am <span class="highlight">Kelvin Yau</span>, a Digital Entertainment Technology graduate from Saint Francis University(formerly known as Caritas Institute of Higher Education).
+                I cultivated a deep passion for game and web development throughout my four-year studies, and I am enthusiastic about applying my skills and knowledge in the required industries.
+                Therefore, a website was developed by myself to explore job opportunities that utilize my capabilities and contributing to the industries.
+            </div>
+            <div class="content">
+                Below are some of the projects that I contributed to, and they are in different fields. Please feel free to take a look of my portfolio and Resume.
+            </div>
+            <div class="btn">
+                <a href="" class="btn_download" download>Resume<i class="fa-solid fa-file-lines" style="margin-left: 0.5vw"></i></a>
+            </div>
+    
+            </div>
+        </div>
+    
+        <div id="projects">
+            <div id="projects_container">
+                <div class="title"><div class="title_main">Projects</div></div>
+                
+                <div id="btn_container">
+                    <button class="btn_filter active" onclick="filter('all')">
+                        Show All
+                    </button>
+                    <button class="btn_filter" onclick="filter('website')">
+                        Website
+                    </button>
+                    <button class="btn_filter" onclick="filter('3d')">
+                        3D Modeling and Animation
+                    </button>
+                    <button class="btn_filter" onclick="filter('game')">
+                        Game
+                    </button>
+                    <button class="btn_filter" onclick="filter('graphic')">
+                        Graphic Design and Photography
+                    </button>
+                </div>
+    
+                <div id="showcase_container"></div>
+            
+            </div>
+        </div>
+    
+        <div class="footer_container">
+            <div class="footer_title">Contact</div>
+            <div class="footer_content"><i class="fa-solid fa-envelope" style="margin-right: 0.5vw"></i>kelvinyauty@gmail.com</div>
+            <div class="footer_content"><i class="fa-solid fa-phone" style="margin-right: 0.5vw"></i>+852 91662645</div>
+            <div class="copyright">© 2024 Yau Tsz Yeung</div>
+        </div>
+        
+        <div class="popup" id="popup-1">
+            <div class="project_content">
+                <div class="popup_header_container">
+                    <div id="project_title"></div>
+                    <div class="btn_close" onclick="ClosePopup()">&times;</div>
+                </div>
+    
+                <div class="deco"></div>
+    
+                <div id="project_details_container">
+
+                    <div id="slideshow_container" class="slideshow_container">
+                        <div class="slider-wrapper">
+                            <div class="slider" id="slider">
+                                <!--according to the number of slides, generate below div-->
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div id="video_container">
+    
+                    </div>
+
+                    <div id="content_container">
+                        <table>
+                            <tbody id="description_table">
+                                <tr>
+                                    <td class="table_title">Introduction</td>
+                                </tr>
+                            </tbody>
+                            <tbody id="features_table">
+                                <tr>
+                                    <td class="table_title">Features</td>
+                                </tr>
+                            </tbody>
+                            <tbody id="tools_table">
+                                <tr>
+                                    <td class="table_title">Tools / Programming Language</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="responsive_off_msg">
+        Please use a computer, laptop, or tablet to visit the website for the best experience.
+    </div>
+
+
+    
+</body>
+<script src="js/popup.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/selected_item.js"></script>
+<script src="js/scroll.js"></script>
+</html>

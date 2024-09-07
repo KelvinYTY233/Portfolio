@@ -1,0 +1,152 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #f2f2f2; /*fffcf2*/
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+.header_container{
+    padding: 1.5% 2%;
+    background-color: #25242280;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    
+}
+
+.header_container:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav{
+    font-size: 2em;
+    float: left;
+    width: 50%;
+    text-align: right;
+}
+
+.logo{
+    font-size: 2em;
+}
+
+.logo_container{
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+.white{
+    color: white;
+    margin: 0 1.2vw;
+}
+
+.white:hover{
+    color: #eb5e28;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--padding-padding, 50px);
+}
+
+.footer_container{
+    background-color: #25242280;
+    padding: 20px;
+    width: 100%;
+}
+
+.footer_title{
+    color: white;
+    font-size: 3em;
+    font-weight: 900;
+    width: 75%;
+    text-align: left;
+    margin: 1vh auto;
+}
+
+.footer_content{
+    color: white;
+    font-size: 2em;
+    width: 75%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.responsive_off_msg{
+    display: none;
+}
+
+.copyright{
+    color: white;
+    width: 75%;
+    margin: 2vh auto;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1200px) {
+    .nav{
+        width: 75%;
+    }
+    .logo_container{
+        width: 25%;
+    }
+    .footer_content{
+        font-size: 1.5em;
+    }
+    .footer_title{
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 979px) {
+    .nav{
+        width: 100%;
+        margin: auto;
+        float: none;
+        text-align: center;
+    }
+    .logo_container{
+        width: 100%;
+        margin: auto;
+        float: none;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .footer_content{
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive_off{
+        display: none;
+    }
+
+    .responsive_off_msg{
+        display: block;
+        align-content: center;
+        font-size: 1.5em;
+        height: 100vh;
+        margin: auto;
+        text-align: left;
+        width: 75%;
+        height: 100vh;
+    }
+}

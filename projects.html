@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="project_name">Document</title>
+    <script src="projects.js"></script>
+</head>
+<body onload="onload_call()">
+    <div id="project_title"></div>
+    <div id="project_details_container">
+        <div id="slideshow_container">
+            <!--according to number of slide, generate below div-->
+        </div>
+
+        <div id="content_container">
+            <table>
+                <tbody id="tools_table">
+                    <tr>
+                        <td class="table_title">Tools</td>
+                    </tr>
+                </tbody>
+                <tbody id="description_table">
+                    <tr>
+                        <td class="table_title">Introduction</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    
+
+
+
+</body>
+
+<script src="selected_item.js"></script>
+<script>
+    function onload_call(){
+        load_title();
+        load_details();
+    }
+</script>
+
+
+</html>

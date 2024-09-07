@@ -1,0 +1,203 @@
+.title{
+    font-size: 3em;
+    font-weight: 900;
+    color: white;
+    display: flex;
+    width:75%;
+    justify-content: left;
+    margin: 2vh auto;
+    text-align: left;
+}
+
+.content{
+    font-size: 2em;
+    width: 75%;
+    margin: 2vh auto;
+    text-align: justify;
+}
+
+.highlight{
+    color: #eb5e28;
+}
+
+.title_main{
+    background-color: #252422;
+    padding: 1vh 1vw;
+}
+
+.title_sub{
+    background-color: #eb5e28;
+    padding: 1vh 1vw;
+}
+
+.btn_download{
+    background-color: #252422;
+    color: white;
+    padding: 1vh 1vw;
+}
+
+.btn_download:hover{
+    background-color: #252422;
+    color: white;
+}
+
+.btn{
+    font-size: 2em;
+    display: flex;
+    width:75%;
+    justify-content: left;
+    margin: 2vh auto;
+    text-align: left;
+}
+
+#projects_container{
+    height: 100vh;
+    align-content: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.about_container{
+    height: 50vh;
+    align-content: center;
+    display: inline-block;
+}
+
+#btn_container{
+    width: 75%;
+    align-items: center;
+    margin: auto;
+    position: relative;
+}
+
+.btn_filter{
+    margin: 2vh 0.5vh;
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    color: rgb(37,36,34);
+}
+
+.btn_filter:hover{
+    background-color: #25242280;
+    color: white;
+}
+
+.active{
+    background-color: #252422;
+    color: #fffcf2;
+}
+
+#showcase_container{
+    border-width: 3px;
+    border-style: solid;
+    border-color: #252422;
+    border-radius: 5px;
+    padding: 20px 20px;
+    text-align: center;
+    overflow: hidden;
+    width:75%;
+    margin:auto;
+    position: relative;
+}
+
+.card{
+    margin: 3% 2.5%;
+    width: 25%;
+    text-align: center;
+    display: none;
+    padding-bottom:1vh;
+    box-shadow: 2px 5px 5px #888;
+    background-color: #252422;
+    padding: 5px 0 15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.show {
+    display: inline-block;
+}
+
+.card:hover{
+    opacity: 0.85;
+}
+
+.thumbnail{
+    width: 600px;
+    height: 200px;
+    max-width:100%;
+    max-height:100%;
+}
+
+.name{ 
+    color: white;
+    font-size: 1.2em;
+}
+
+.name:hover{
+    color:#eb5e28;
+}
+
+@media only screen and (max-width: 1980px) {
+    .about_container{
+        height: 65vh;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .title{
+        font-size: 2em;
+    }
+    .content{
+        font-size: 1.5em;
+    }
+    .btn_filter{
+        font-size: 1.2em;
+    }
+    .btn{
+        font-size: 1.5em;
+    }
+    .card{
+        width: 45%;
+    }
+    .about_container{
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 979px) {
+    .card{
+        width: 80%;
+    }
+    .about_container{
+        height: 70vh;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .title{
+        font-size: 1.5em;
+    }
+    .content{
+        font-size: 1.2em;
+    }
+    .btn_filter{
+        font-size: 1.2em;
+    }
+    .btn{
+        font-size: 1.2em;
+    }
+    .card{
+        width: 90%;
+    }
+    .about_container{
+        height: 55vh;
+    }
+}
+
